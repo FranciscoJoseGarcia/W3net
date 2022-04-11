@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+/* header */
+.header {
+    display: flex;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    padding: 10px;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    height: 75px;
+    padding: 10px;
+    justify-content: space-between;
+    font-family: 'Bungee', cursive;
+    box-shadow: 0px 0px 30px 1px white;
+    z-index: 1;
+}  
+ul {
+    display: flex;
+    width: 750px;
+    justify-content: space-between;
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+    color: rgb(204, 204, 251);
+    
+}
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    font-family: 'Secular One', sans-serif;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    color: white;
+    box-shadow: 0px 0px 30px 1px white;
+    
+}
+.newsletter {
+    margin-left: 400px;
+    font-size: bold;
+}
+.newsletter__titulo {
+    color: rgb(204, 204, 251);
+}
+.suscribirme:hover {
+    background-color: blanchedalmond; 
+}
+.redes {
+    margin-left: 90px;
+    color: rgb(204, 204, 251);
+}  
+.copyright {
+    color: rgb(204, 204, 251);
+}
+
+/* INDEX */
+/* main */
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  
+}
+.mainIndex {
+    height: 500px;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    font-family: 'Secular One', sans-serif;
+    color: white;  
+   
+}
+.main__titulo {
+    margin-top: 90px;
+    padding-left: 130px;
+    
+}
+.main__titulo h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: rgb(204, 204, 251);
+    
+}
+.main__titulo h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgb(204, 204, 251);
+    margin-bottom: 30px;
+    
+}
+.main__titulo p {
+    line-height: 25px;
+    letter-spacing: 1px;
+   
+}
+.main__imagenes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 50px;
+     
+}
+.logoBtc {
+    max-width: 450px;
+    height: auto;
+    
+}
+.logoEth {
+    max-width: 197px;
+    height: auto;
+}
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    gap: 50px;
+}
+.Armamos, .Billetera, .Garantias, .Housing {
+    border: 2px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #161622;
+    font-family: 'Secular One', sans-serif;
+    color: white;  
+    width: 900px;
+    margin: 10px auto;
+    height: 200px;
+    justify-content: center;
+    box-shadow: 0px 0px 15px 1px white;
+}
+.Armamos:hover {
+    filter: grayscale(80%);
+}
+.Billetera:hover {
+    filter: grayscale(80%);
+}
+.Garantias:hover {
+    filter: grayscale(80%)
+}
+.Housing:hover {
+    filter: grayscale(80%);
+}
+.Housing {
+    margin-bottom: 50px;
+}
+.Armamos__titulo h2, .Billetera__titulo h2, .Garantias__titulo h2, .Housing__titulo h2 {
+    color: blanchedalmond;
+    margin-bottom: 15px;
+    font-size: xx-large;
+}
+.Housing__titulo a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.Armamos__titulo a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+    
+/* CONTACTANOS */
+
+.principal {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Secular One', sans-serif;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    color: white;
+
+}
+
+.mensajeContenedor {
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mensaje {
+    color: blanchedalmond;
+}
+.iframe {
+    margin: auto;
+}
+
+.frasesMensaje {
+    font-size: large;
+}
+.formulario {
+    border: 2px solid;
+    padding: 10px;
+    background-color: rgba(182, 151, 142, 0.687);
+    box-shadow: 0px 0px 15px 1px white;
+    margin-top: 20px;
+    color: blanchedalmond;
+}
+.enviar:hover {
+    background-color: blanchedalmond; 
+}
+.borrar:hover {
+    background-color: blanchedalmond;
+}
+/* HOUSING */
+
+.mainHousing {
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    background-color: #161622;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;  
+}
+
+.mainHousing__encabezado {
+    margin-top: 40px;
+    margin-left: 60px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    color: blanchedalmond;
+}
+.mainHousing__servicios {
+    margin-left: 60px;
+    width: 900px;
+    line-height: 25px;
+    letter-spacing: 1px;
+      
+}
+.mainHousing__servicios a {
+    text-decoration: none;
+    font: bolder;
+    color: blanchedalmond;
+    font-size: x-large;
+}
+/* RIGS DE MINERÍA */
+
+.mainRigs {
+    color: white;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    display: flex;
+    flex-direction: column;
+    font-family: 'Secular One', sans-serif;
+}
+.mainRigs__rigs {
+    display: flex;
+    flex-direction: row;
+}
+.mainRigs__titulo {
+    margin-top: 35px;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 35px;
+    color: blanchedalmond;
+}
+.mainRigs__parrafosYfoto {
+    display: flex;
+    margin-bottom: 50px;
+}
+.mainRigs__parrafos {
+    margin-left: 50px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    }
+.mainRigs__foto {
+    margin-left: 80px;
+}
+.mainRigs__rig1, .mainRigs__rig2 {
+    text-align: center;
+    margin-top: 35px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161622;
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    box-shadow: 0px 0px 15px 1px white;
+    width: 400px;
+    margin: 20px auto;
+    justify-content: center;
+    padding: 20px;
+    gap: 26px;
+}
+.mainRigs__palabras {
+    color: blanchedalmond;
+}
+.formasDePago {
+    
+    text-align: center;
+    margin-top: 35px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161622;
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    box-shadow: 0px 0px 15px 1px white;
+    width: 280px;
+    margin: 20px auto;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.formasDePago2, .plazoDeEntrega {
+    font-size: x-large;
+    color: blanchedalmond;
+}
+
+
+/* ACADEMIA */
+.mainAcademia {
+    font-family: 'Secular One', sans-serif;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.titularAcademia {
+    text-align: center;
+    color: blanchedalmond;
+   
+}
+.gridAcademia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    margin: 30px auto;
+    
+}
+.gridAcademia__criptomonedas, .gridAcademia__blockchain, .gridAcademia__defis, .gridAcademia__minado, .gridAcademia__roi, .gridAcademia__hashrate {
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 9px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gridAcademia__criptomonedas {
+    background-image: url('../img/criptomonedas-nulas-1140x570.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gridAcademia__criptomonedas:hover {
+    filter: grayscale(80%);
+}
+.gridAcademia__minado {
+    background-image: url('../img/housing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gridAcademia__minado:hover {
+    filter: grayscale(80%);
+}
+.gridAcademia__blockchain {
+    background-image: url('../img/blockchain-informacion-agil-seguridad.1.12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gridAcademia__blockchain:hover {
+    filter: grayscale(80%);
+}
+.gridAcademia__defis {
+    background-image: url('../img/1613490263110_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gridAcademia__defis:hover {
+    filter: grayscale(80%);
+}
+.gridAcademia__hashrate {
+    background-image: url('../img/chart-12-640x336.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gridAcademia__hashrate:hover {
+    filter: grayscale(80%);
+}
+.gridAcademia__roi {
+    background-image: url('../img/shutterstock_1022256694-2000x1200.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gridAcademia__roi:hover {
+    filter: grayscale(80%);
+}
+/* MEDIA QUERIE MOBILE */
+@media screen and (max-width: 500px) {
+    /* footer */
+    #footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .newsletter, .copyright, .redes {
+        margin-left: 0px;
+        border: 1px solid;
+        padding: 3px;
+        margin: 3px;
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+        box-shadow: 0px 0px 8px 1px;
+    }
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    /* menu */
+    .header nav {
+        display: none;
+    }
+    .header {
+       justify-content: center;
+    }
+    .cuerpo {
+        display: flex;
+        flex-direction: column;
+           
+    }
+
+    /* index */
+    .mainIndex {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+          
+    }
+    .main__imagenes {
+        display: flex;
+        
+    }
+    .main__titulo {
+        padding-left: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .logoBtc {
+        max-width: 300px;
+    }
+    .logoEth {
+        max-width: 135px;
+    }
+    .Armamos, .Billetera, .Garantias, .Housing {
+        width: 400px;
+        padding: 20px;
+        height: 180px;
+        
+    }
+    .Armamos__titulo h2, .Billetera__titulo h2, .Garantias__titulo h2, .Housing__titulo h2 {
+        font-size: medium;
+    }
+    
+    /* academia */
+    .gridAcademia {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px 30px;
+        width: 100%;
+        height: 100vh;
+        margin: 30px auto;
+    }
+    /* housing */
+    .mainHousing__servicios {
+        margin-left: 20px;
+        width: 450px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    .mainHousing {
+        height: auto;
+    }
+    .mainHousing__encabezado {
+       margin: 30px 20px;
+       font-size: smaller;
+       text-align: center;
+    }
+   /* contactanos */
+    .principal {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .mensaje, .frasesMensaje {
+        text-align: center;
+    }
+    .formulario {
+        max-width: 400px;
+        margin: 10px auto;
+    }
+    .textarea {
+        max-width: 350px;
+    }
+    .iframe {
+        margin-bottom: 30px;
+    }
+    /* rigs de mineria */
+    .mainRigs__parrafosYfoto {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mainRigs__titulo {
+        font-size: medium;
+    }
+    .mainRigs__rigs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* MEDIA QUERIE TABLET */
+@media (min-width: 501px) and (max-width: 1000px) {
+    /* menu */
+    ul {
+        display: flex;
+        width: 430px;
+        justify-content: space-between;
+        list-style: none;
+    }
+    body {
+    overflow-x: hidden;
+    }
+    .header {
+        font-size: small;
+    }
+    /* footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .newsletter, .copyright, .redes {
+        margin-left: 0px;
+        border: 1px solid;
+        padding: 3px;
+        margin: 15px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 5px;
+        box-shadow: 0px 0px 8px 1px;
+    }
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Academia */
+    .gridAcademia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    width: 100%;
+    height: 100vh;
+    margin: 30px auto;
+    }
+    /* index */
+    .Armamos, .Billetera, .Garantias, .Housing {
+        width: 500px;
+        margin: 10px auto; 
+    }
+    .mainIndex {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    .main__titulo {
+        margin-top: 50px;
+        padding-left: 60px;
+        text-align: center;
+    }
+    .main__imagenes {
+        margin: auto;         
+    }
+    .logoBtc {
+        max-width: 350px;
+      
+    }
+    .logoEth {
+        max-width: 150px;
+    }
+    /* contactanos */
+    .principal {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .mensaje, .frasesMensaje {
+        text-align: center;
+    }
+    .formulario {
+        max-width: 470px;
+        margin: 10px auto;
+      
+    }
+    .textarea {
+        max-width: 350px;
+    }
+    .iframe {
+        margin-bottom: 30px;
+    }
+    /* housing */
+    .mainHousing__servicios {
+        margin: auto;
+        width: 470px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    .mainHousing {
+        height: auto;
+    }
+    .mainHousing__encabezado {
+       margin: 30px 20px;
+       font-size: smaller;
+       text-align: center;
+    }
+    /* rigs de mineria */
+    .mainRigs__parrafosYfoto {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+        text-align: center;
+    }
+   
+    .mainRigs__rigs {
+        display: flex;
+        flex-direction: column;
+    }
+}
