@@ -4,35 +4,22 @@
     box-sizing: border-box;   
 }
 
-/* header */
+.navbar-collapse {
+    justify-content: end;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(204, 204, 251);
+    font-size: 1.4rem;
+    margin: 0px 10px
+}
+
 .header {
-    display: flex;
     background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
-    padding: 10px;
-    height: 75px;
     position: sticky;
     top: 0;
-    height: 75px;
-    padding: 10px;
-    justify-content: space-between;
-    font-family: 'Bungee', cursive;
+    z-index: 90;
     box-shadow: 0px 0px 30px 1px white;
-    z-index: 1;
-}  
-ul {
-    display: flex;
-    width: 750px;
-    justify-content: space-between;
-    list-style: none;
-}
-ul li a {
-    text-decoration: none;
-    color: rgb(204, 204, 251);
-    
-}
-nav {
-    display: flex;
-    align-items: flex-end;
 }
 
 /* footer */
@@ -58,6 +45,10 @@ nav {
     margin-left: 90px;
     color: rgb(204, 204, 251);
 }  
+.redes a {
+    font-size: 1.5rem;
+    color: blanchedalmond;
+}
 .copyright {
     color: rgb(204, 204, 251);
 }
@@ -225,14 +216,14 @@ nav {
 }
 
 .mainHousing__encabezado {
-    margin-top: 40px;
-    margin-left: 60px;
+    margin: 40px auto;
     line-height: 50px;
     margin-bottom: 10px;
     color: blanchedalmond;
 }
+
 .mainHousing__servicios {
-    margin-left: 60px;
+    margin: 0px auto;
     width: 900px;
     line-height: 25px;
     letter-spacing: 1px;
@@ -264,18 +255,14 @@ nav {
     margin-bottom: 35px;
     color: blanchedalmond;
 }
-.mainRigs__parrafosYfoto {
-    display: flex;
-    margin-bottom: 50px;
-}
 .mainRigs__parrafos {
-    margin-left: 50px;
     letter-spacing: 1px;
     line-height: 35px;
-    }
-.mainRigs__foto {
-    margin-left: 80px;
 }
+.mainRigs__foto {
+    text-align: center;
+}
+
 .mainRigs__rig1, .mainRigs__rig2 {
     text-align: center;
     margin-top: 35px;
@@ -435,19 +422,7 @@ nav {
     body {
         overflow-x: hidden;
     }
-    /* menu */
-    .header nav {
-        display: none;
-    }
-    .header {
-       justify-content: center;
-    }
-    .cuerpo {
-        display: flex;
-        flex-direction: column;
-           
-    }
-
+  
     /* index */
     .mainIndex {
         display: flex;
@@ -526,11 +501,7 @@ nav {
         margin-bottom: 30px;
     }
     /* rigs de mineria */
-    .mainRigs__parrafosYfoto {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+    
     .mainRigs__titulo {
         font-size: medium;
     }
@@ -648,13 +619,6 @@ nav {
        text-align: center;
     }
     /* rigs de mineria */
-    .mainRigs__parrafosYfoto {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin: auto;
-        text-align: center;
-    }
    
     .mainRigs__rigs {
         display: flex;
