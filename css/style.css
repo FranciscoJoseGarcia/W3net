@@ -3,7 +3,20 @@
     padding: 0;
     box-sizing: border-box;   
 }
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 
+/* header */
 .navbar-collapse {
     justify-content: end;
 }
@@ -20,6 +33,11 @@
     top: 0;
     z-index: 90;
     box-shadow: 0px 0px 30px 1px white;
+    flex-shrink: 0;
+
+}
+.container-fluid a img {
+    height: 80px;
 }
 
 /* footer */
@@ -29,7 +47,7 @@
     background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
     color: white;
     box-shadow: 0px 0px 30px 1px white;
-    
+    flex-shrink: 0;
 }
 .newsletter {
     margin-left: 400px;
@@ -59,7 +77,8 @@
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-  
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 .mainIndex {
     height: 500px;
@@ -168,7 +187,8 @@
     font-family: 'Secular One', sans-serif;
     background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
     color: white;
-
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .mensajeContenedor {
@@ -209,10 +229,14 @@
     background-color: #161622;
     background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
     background-repeat: no-repeat;
-    height: 450px;
     display: flex;
     flex-direction: column;
     background-size: cover;  
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 100%;
+    padding-bottom: 0px;
+    gap: 30px;
 }
 
 .mainHousing__encabezado {
@@ -227,7 +251,6 @@
     width: 900px;
     line-height: 25px;
     letter-spacing: 1px;
-      
 }
 .mainHousing__servicios a {
     text-decoration: none;
@@ -243,6 +266,8 @@
     display: flex;
     flex-direction: column;
     font-family: 'Secular One', sans-serif;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 .mainRigs__rigs {
     display: flex;
@@ -315,6 +340,8 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 .titularAcademia {
     text-align: center;
