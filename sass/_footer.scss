@@ -1,0 +1,36 @@
+/* footer */
+.footer {
+    display: flex;
+    font-family: 'Secular One', sans-serif;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    color: white;
+    box-shadow: 0px 0px 30px 1px white;
+    flex-shrink: 0;
+    .copyright {
+        color: rgb(204, 204, 251);
+    }
+    .newsletter {
+        margin-left: 400px;
+        font-size: bold;
+        &__titulo {
+            color: rgb(204, 204, 251);
+        }
+        &__formulario {
+            .suscribirme:hover {
+                background-color: blanchedalmond; 
+            } 
+        }
+    }
+    .redes {
+        margin-left: 90px;
+        color: rgb(204, 204, 251);
+        a {
+            font-size: 1.5rem;
+            color: blanchedalmond;
+        }
+    }
+}
+
+
+
+

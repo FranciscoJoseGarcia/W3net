@@ -1,0 +1,878 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+/* footer */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Secular One', sans-serif;
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  color: white;
+  -webkit-box-shadow: 0px 0px 30px 1px white;
+          box-shadow: 0px 0px 30px 1px white;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.newsletter {
+  margin-left: 400px;
+  font-size: bold;
+}
+
+.newsletter__titulo {
+  color: #ccccfb;
+}
+
+.suscribirme:hover {
+  background-color: blanchedalmond;
+}
+
+.redes {
+  margin-left: 90px;
+  color: #ccccfb;
+}
+
+.redes a {
+  font-size: 1.5rem;
+  color: blanchedalmond;
+}
+
+.copyright {
+  color: #ccccfb;
+}
+
+/* header */
+.navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ccccfb;
+  font-size: 1.4rem;
+  margin: 0px 10px;
+}
+
+.header {
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  -webkit-box-shadow: 0px 0px 30px 1px white;
+          box-shadow: 0px 0px 30px 1px white;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.container-fluid a img {
+  height: 80px;
+}
+
+/* INDEX */
+/* main */
+.cuerpo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.mainIndex {
+  height: 500px;
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Secular One', sans-serif;
+  color: white;
+}
+
+.main__titulo {
+  margin-top: 90px;
+  padding-left: 130px;
+}
+
+.main__titulo h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #ccccfb;
+}
+
+.main__titulo h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #ccccfb;
+  margin-bottom: 30px;
+}
+
+.main__titulo p {
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.main__imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 50px;
+}
+
+.logoBtc {
+  max-width: 450px;
+  height: auto;
+}
+
+.logoEth {
+  max-width: 197px;
+  height: auto;
+}
+
+.secciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  gap: 50px;
+}
+
+.Armamos, .Billetera, .Garantias, .Housing {
+  border: 2px solid white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #161622;
+  font-family: 'Secular One', sans-serif;
+  color: white;
+  width: 900px;
+  margin: 10px auto;
+  height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 15px 1px white;
+          box-shadow: 0px 0px 15px 1px white;
+}
+
+.Armamos:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.Billetera:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.Garantias:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.Housing:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.Housing {
+  margin-bottom: 50px;
+}
+
+.Armamos__titulo h2, .Billetera__titulo h2, .Garantias__titulo h2, .Housing__titulo h2 {
+  color: blanchedalmond;
+  margin-bottom: 15px;
+  font-size: xx-large;
+}
+
+.Housing__titulo a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+.Armamos__titulo a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+/* CONTACTANOS */
+.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-family: 'Secular One', sans-serif;
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.mensajeContenedor {
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mensaje {
+  color: blanchedalmond;
+}
+
+.iframe {
+  margin: auto;
+}
+
+.frasesMensaje {
+  font-size: large;
+}
+
+.formulario {
+  border: 2px solid;
+  padding: 10px;
+  background-color: rgba(182, 151, 142, 0.687);
+  -webkit-box-shadow: 0px 0px 15px 1px white;
+          box-shadow: 0px 0px 15px 1px white;
+  margin-top: 20px;
+  color: blanchedalmond;
+}
+
+.enviar:hover {
+  background-color: blanchedalmond;
+}
+
+.borrar:hover {
+  background-color: blanchedalmond;
+}
+
+/* HOUSING */
+.mainHousing {
+  font-family: 'Secular One', sans-serif;
+  color: white;
+  background-color: #161622;
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-size: cover;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+  padding-bottom: 0px;
+  gap: 30px;
+}
+
+.mainHousing__encabezado {
+  margin: 40px auto;
+  line-height: 50px;
+  margin-bottom: 10px;
+  color: blanchedalmond;
+}
+
+.mainHousing__servicios {
+  margin: 0px auto;
+  width: 900px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.mainHousing__servicios a {
+  text-decoration: none;
+  font: bolder;
+  color: blanchedalmond;
+  font-size: x-large;
+}
+
+/* RIGS DE MINERÍA */
+.mainRigs {
+  color: white;
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Secular One', sans-serif;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.mainRigs__rigs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainRigs__titulo {
+  margin-top: 35px;
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 35px;
+  color: blanchedalmond;
+}
+
+.mainRigs__parrafos {
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.mainRigs__foto {
+  text-align: center;
+}
+
+.mainRigs__rig1, .mainRigs__rig2 {
+  text-align: center;
+  margin-top: 35px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #161622;
+  font-family: 'Secular One', sans-serif;
+  color: white;
+  -webkit-box-shadow: 0px 0px 15px 1px white;
+          box-shadow: 0px 0px 15px 1px white;
+  width: 400px;
+  margin: 20px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  gap: 26px;
+}
+
+.mainRigs__palabras {
+  color: blanchedalmond;
+}
+
+.formasDePago {
+  text-align: center;
+  margin-top: 35px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #161622;
+  font-family: 'Secular One', sans-serif;
+  color: white;
+  -webkit-box-shadow: 0px 0px 15px 1px white;
+          box-shadow: 0px 0px 15px 1px white;
+  width: 280px;
+  margin: 20px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.formasDePago2, .plazoDeEntrega {
+  font-size: x-large;
+  color: blanchedalmond;
+}
+
+/* ACADEMIA */
+.mainAcademia {
+  font-family: 'Secular One', sans-serif;
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.titularAcademia {
+  text-align: center;
+  color: blanchedalmond;
+}
+
+.gridAcademia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  margin: 30px auto;
+}
+
+.gridAcademia__criptomonedas, .gridAcademia__blockchain, .gridAcademia__defis, .gridAcademia__minado, .gridAcademia__roi, .gridAcademia__hashrate {
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 9px 1px;
+          box-shadow: 0px 0px 9px 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gridAcademia__criptomonedas {
+  background-image: url("../img/criptomonedas-nulas-1140x570.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gridAcademia__criptomonedas:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.gridAcademia__minado {
+  background-image: url("../img/housing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gridAcademia__minado:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.gridAcademia__blockchain {
+  background-image: url("../img/blockchain-informacion-agil-seguridad.1.12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gridAcademia__blockchain:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.gridAcademia__defis {
+  background-image: url("../img/1613490263110_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gridAcademia__defis:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.gridAcademia__hashrate {
+  background-image: url("../img/chart-12-640x336.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gridAcademia__hashrate:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+.gridAcademia__roi {
+  background-image: url("../img/shutterstock_1022256694-2000x1200.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gridAcademia__roi:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
+/* MEDIA QUERIE MOBILE */
+@media screen and (max-width: 500px) {
+  /* footer */
+  #footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter, .copyright, .redes {
+    margin-left: 0px;
+    border: 1px solid;
+    padding: 3px;
+    margin: 3px;
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 8px 1px;
+            box-shadow: 0px 0px 8px 1px;
+  }
+  .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  /* index */
+  .mainIndex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 450px;
+  }
+  .main__imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__titulo {
+    padding-left: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .logoBtc {
+    max-width: 300px;
+  }
+  .logoEth {
+    max-width: 135px;
+  }
+  .Armamos, .Billetera, .Garantias, .Housing {
+    width: 400px;
+    padding: 20px;
+    height: 180px;
+  }
+  .Armamos__titulo h2, .Billetera__titulo h2, .Garantias__titulo h2, .Housing__titulo h2 {
+    font-size: medium;
+  }
+  /* academia */
+  .gridAcademia {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 10px 30px;
+    width: 100%;
+    height: 100vh;
+    margin: 30px auto;
+  }
+  /* housing */
+  .mainHousing__servicios {
+    margin-left: 20px;
+    width: 450px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  .mainHousing {
+    height: auto;
+  }
+  .mainHousing__encabezado {
+    margin: 30px 20px;
+    font-size: smaller;
+    text-align: center;
+  }
+  /* contactanos */
+  .principal {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mensaje, .frasesMensaje {
+    text-align: center;
+  }
+  .formulario {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  .textarea {
+    max-width: 350px;
+  }
+  .iframe {
+    margin-bottom: 30px;
+  }
+  /* rigs de mineria */
+  .mainRigs__titulo {
+    font-size: medium;
+  }
+  .mainRigs__rigs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* MEDIA QUERIE TABLET */
+@media (min-width: 501px) and (max-width: 1000px) {
+  /* menu */
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 430px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    font-size: small;
+  }
+  /* footer */
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter, .copyright, .redes {
+    margin-left: 0px;
+    border: 1px solid;
+    padding: 3px;
+    margin: 15px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 8px 1px;
+            box-shadow: 0px 0px 8px 1px;
+  }
+  .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* Academia */
+  .gridAcademia {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    width: 100%;
+    height: 100vh;
+    margin: 30px auto;
+  }
+  /* index */
+  .Armamos, .Billetera, .Garantias, .Housing {
+    width: 500px;
+    margin: 10px auto;
+  }
+  .mainIndex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 700px;
+  }
+  .main__titulo {
+    margin-top: 50px;
+    padding-left: 60px;
+    text-align: center;
+  }
+  .main__imagenes {
+    margin: auto;
+  }
+  .logoBtc {
+    max-width: 350px;
+  }
+  .logoEth {
+    max-width: 150px;
+  }
+  /* contactanos */
+  .principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .mensaje, .frasesMensaje {
+    text-align: center;
+  }
+  .formulario {
+    max-width: 470px;
+    margin: 10px auto;
+  }
+  .textarea {
+    max-width: 350px;
+  }
+  .iframe {
+    margin-bottom: 30px;
+  }
+  /* housing */
+  .mainHousing__servicios {
+    margin: auto;
+    width: 470px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  .mainHousing {
+    height: auto;
+  }
+  .mainHousing__encabezado {
+    margin: 30px 20px;
+    font-size: smaller;
+    text-align: center;
+  }
+  /* rigs de mineria */
+  .mainRigs__rigs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */
