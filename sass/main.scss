@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     align-items: stretch;
 }
+@import 'map';
 @import 'footer';
 @import 'header';
 
@@ -35,8 +36,7 @@ body {
     background-position: center;
     display: flex;
     font-family: 'Secular One', sans-serif;
-    color: white;  
-   
+    color: white;   
 }
 .main__titulo {
     margin-top: 90px;
@@ -46,32 +46,27 @@ body {
 .main__titulo h1 {
     font-size: 60px;
     letter-spacing: 2px;
-    color: rgb(204, 204, 251);
-    
+    color: map-get($map: $colores, $key: principal);
 }
 .main__titulo h2 {
     font-size: 30px;
     letter-spacing: 2px;
     color: rgb(204, 204, 251);
     margin-bottom: 30px;
-    
 }
 .main__titulo p {
     line-height: 25px;
     letter-spacing: 1px;
-   
 }
 .main__imagenes {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 50px;
-     
+    padding-right: 50px; 
 }
 .logoBtc {
     max-width: 450px;
     height: auto;
-    
 }
 .logoEth {
     max-width: 197px;
@@ -113,7 +108,7 @@ body {
     margin-bottom: 50px;
 }
 .Armamos__titulo h2, .Billetera__titulo h2, .Garantias__titulo h2, .Housing__titulo h2 {
-    color: blanchedalmond;
+    color: map-get($map: $colores, $key: secundario);
     margin-bottom: 15px;
     font-size: xx-large;
 }

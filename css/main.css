@@ -41,46 +41,34 @@ body {
       flex-shrink: 0;
 }
 
-.newsletter {
+.footer .copyright {
+  color: #ccccfb;
+}
+
+.footer .newsletter {
   margin-left: 400px;
   font-size: bold;
 }
 
-.newsletter__titulo {
+.footer .newsletter__titulo {
   color: #ccccfb;
 }
 
-.suscribirme:hover {
+.footer .newsletter__formulario .suscribirme:hover {
   background-color: blanchedalmond;
 }
 
-.redes {
+.footer .redes {
   margin-left: 90px;
   color: #ccccfb;
 }
 
-.redes a {
+.footer .redes a {
   font-size: 1.5rem;
   color: blanchedalmond;
 }
 
-.copyright {
-  color: #ccccfb;
-}
-
 /* header */
-.navbar-collapse {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #ccccfb;
-  font-size: 1.4rem;
-  margin: 0px 10px;
-}
-
 .header {
   background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
   position: -webkit-sticky;
@@ -93,8 +81,32 @@ body {
       flex-shrink: 0;
 }
 
-.container-fluid a img {
+.header .navbar-dark {
+  color: #ccccfb;
+  font-size: 1.4rem;
+  margin: 0px 10px;
+}
+
+.header nav .container-fluid a img {
   height: 80px;
+}
+
+.header nav .container-fluid .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.header nav .container-fluid div .navbar-nav {
+  color: #ccccfb;
+  font-size: 1.4rem;
+  margin: 0px 10px;
+}
+
+.header nav .container-fluid div .navbar-nav .nav-item .nav-link {
+  color: #ccccfb;
+  font-size: 1.4rem;
+  margin: 0px 10px;
 }
 
 /* INDEX */
