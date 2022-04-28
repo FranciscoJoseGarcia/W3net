@@ -157,12 +157,28 @@ body {
     margin-top: 20px;
     color: blanchedalmond;
 }
-.enviar:hover {
+.btn--enviar:hover {
     background-color: blanchedalmond; 
 }
-.borrar:hover {
+.btn--borrar:hover {
     background-color: blanchedalmond;
 }
+@mixin btn ($col, $bg) {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    color: $col;
+    background: $bg;
+}
+.btn--enviar {
+    @include btn (white, blue)
+}
+.btn--borrar {
+    @include btn (white, red)
+}
+
 /* HOUSING */
 
 .mainHousing {
@@ -268,9 +284,13 @@ body {
     padding: 10px;
     margin-bottom: 40px;
 }
-.formasDePago2, .plazoDeEntrega {
+.formasDePago2 {
     font-size: x-large;
     color: blanchedalmond;
+}
+.plazoDeEntrega {
+    @extend .formasDePago2;
+    text-decoration: overline;
 }
 
 
@@ -374,7 +394,6 @@ body {
         align-items: center;
     }
     .newsletter, .copyright, .redes {
-        margin-left: 0px;
         border: 1px solid;
         padding: 3px;
         margin: 3px;
@@ -382,6 +401,8 @@ body {
         text-align: center;
         margin: 5px;
         box-shadow: 0px 0px 8px 1px;
+        margin-left: 0px;
+       
     }
     .newsletter {
         display: flex;
@@ -502,7 +523,6 @@ body {
         align-items: center;
     }
     .newsletter, .copyright, .redes {
-        margin-left: 0px;
         border: 1px solid;
         padding: 3px;
         margin: 15px;
@@ -511,6 +531,7 @@ body {
         text-align: center;
         margin: 5px;
         box-shadow: 0px 0px 8px 1px;
+        margin-left: 0px;
     }
     .newsletter {
         display: flex;
