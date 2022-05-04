@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,7 @@ html {
   height: 100%;
 }
 
-body {
+html body {
   width: 100%;
   height: 100%;
   min-height: 100%;
@@ -39,6 +38,10 @@ body {
           box-shadow: 0px 0px 30px 1px white;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
 }
 
 .footer .copyright {
@@ -46,7 +49,6 @@ body {
 }
 
 .footer .newsletter {
-  margin-left: 400px;
   font-size: bold;
 }
 
@@ -59,7 +61,6 @@ body {
 }
 
 .footer .redes {
-  margin-left: 90px;
   color: #ccccfb;
 }
 
@@ -109,8 +110,6 @@ body {
   margin: 0px 10px;
 }
 
-/* INDEX */
-/* main */
 .cuerpo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +126,7 @@ body {
       flex-shrink: 0;
 }
 
-.mainIndex {
+.cuerpo .mainIndex {
   height: 500px;
   background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
   background-repeat: no-repeat;
@@ -140,30 +139,72 @@ body {
   color: white;
 }
 
-.main__titulo {
+@media screen and (max-width: 500px) {
+  .cuerpo .mainIndex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 450px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .cuerpo .mainIndex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 700px;
+  }
+}
+
+.cuerpo .mainIndex .main__titulo {
   margin-top: 90px;
   padding-left: 130px;
 }
 
-.main__titulo h1 {
+.cuerpo .mainIndex .main__titulo h1 {
   font-size: 60px;
   letter-spacing: 2px;
   color: #ccccfb;
 }
 
-.main__titulo h2 {
+.cuerpo .mainIndex .main__titulo h2 {
   font-size: 30px;
   letter-spacing: 2px;
   color: #ccccfb;
   margin-bottom: 30px;
 }
 
-.main__titulo p {
+.cuerpo .mainIndex .main__titulo p {
   line-height: 25px;
   letter-spacing: 1px;
 }
 
-.main__imagenes {
+@media screen and (max-width: 500px) {
+  .cuerpo .mainIndex .main__titulo {
+    padding-left: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .cuerpo .mainIndex .main__titulo {
+    margin-top: 50px;
+    padding-left: 60px;
+    text-align: center;
+  }
+}
+
+.cuerpo .mainIndex .main__imagenes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,26 +218,64 @@ body {
   padding-right: 50px;
 }
 
-.logoBtc {
+.cuerpo .mainIndex .main__imagenes .logoBtc {
   max-width: 450px;
   height: auto;
 }
 
-.logoEth {
+@media screen and (max-width: 500px) {
+  .cuerpo .mainIndex .main__imagenes .logoBtc {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .cuerpo .mainIndex .main__imagenes .logoBtc {
+    max-width: 350px;
+  }
+}
+
+.cuerpo .mainIndex .main__imagenes .logoEth {
   max-width: 197px;
   height: auto;
 }
 
-.secciones {
+@media screen and (max-width: 500px) {
+  .cuerpo .mainIndex .main__imagenes .logoEth {
+    max-width: 135px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .cuerpo .mainIndex .main__imagenes .logoEth {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cuerpo .mainIndex .main__imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .cuerpo .mainIndex .main__imagenes {
+    margin: auto;
+  }
+}
+
+.cuerpo .secciones {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-columns: repeat 1, 1fr;
+      grid-template-columns: repeat 1, 1fr;
   background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
   gap: 50px;
 }
 
-.Armamos, .Billetera, .Garantias, .Housing {
+.cuerpo .secciones .Armamos, .cuerpo .secciones .Billetera, .cuerpo .secciones .Garantias, .cuerpo .secciones .Housing {
   border: 2px solid white;
   text-align: center;
   display: -webkit-box;
@@ -218,47 +297,47 @@ body {
           box-shadow: 0px 0px 15px 1px white;
 }
 
-.Armamos:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
+@media screen and (max-width: 500px) {
+  .cuerpo .secciones .Armamos, .cuerpo .secciones .Billetera, .cuerpo .secciones .Garantias, .cuerpo .secciones .Housing {
+    width: 400px;
+    padding: 20px;
+    height: 180px;
+  }
 }
 
-.Billetera:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
+@media (min-width: 501px) and (max-width: 1000px) {
+  .cuerpo .secciones .Armamos, .cuerpo .secciones .Billetera, .cuerpo .secciones .Garantias, .cuerpo .secciones .Housing {
+    width: 500px;
+    margin: 10px auto;
+  }
 }
 
-.Garantias:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-}
-
-.Housing:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-}
-
-.Housing {
-  margin-bottom: 50px;
-}
-
-.Armamos__titulo h2, .Billetera__titulo h2, .Garantias__titulo h2, .Housing__titulo h2 {
+.cuerpo .secciones .Armamos h2, .cuerpo .secciones .Billetera h2, .cuerpo .secciones .Garantias h2, .cuerpo .secciones .Housing h2 {
   color: blanchedalmond;
   margin-bottom: 15px;
   font-size: xx-large;
 }
 
-.Housing__titulo a {
+@media screen and (max-width: 500px) {
+  .cuerpo .secciones .Armamos h2, .cuerpo .secciones .Billetera h2, .cuerpo .secciones .Garantias h2, .cuerpo .secciones .Housing h2 {
+    font-size: medium;
+  }
+}
+
+.cuerpo .secciones .Armamos h2 a, .cuerpo .secciones .Billetera h2 a, .cuerpo .secciones .Garantias h2 a, .cuerpo .secciones .Housing h2 a {
   text-decoration: none;
   color: blanchedalmond;
 }
 
-.Armamos__titulo a {
-  text-decoration: none;
-  color: blanchedalmond;
+.cuerpo .secciones .Armamos:hover, .cuerpo .secciones .Billetera:hover, .cuerpo .secciones .Garantias:hover, .cuerpo .secciones .Housing:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
-/* CONTACTANOS */
+.cuerpo .secciones .Housing {
+  margin-bottom: 50px;
+}
+
 .principal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,25 +356,71 @@ body {
       flex-shrink: 0;
 }
 
-.mensajeContenedor {
+@media screen and (max-width: 500px) {
+  .principal {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
+.principal .mensajeContenedor {
   margin-right: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.mensaje {
+.principal .mensajeContenedor .mensaje {
   color: blanchedalmond;
 }
 
-.iframe {
-  margin: auto;
+@media screen and (max-width: 500px) {
+  .principal .mensajeContenedor .mensaje {
+    text-align: center;
+  }
 }
 
-.frasesMensaje {
+@media (min-width: 501px) and (max-width: 1000px) {
+  .principal .mensajeContenedor .mensaje {
+    text-align: center;
+  }
+}
+
+.principal .mensajeContenedor .frasesMensaje {
   font-size: large;
 }
 
-.formulario {
+@media screen and (max-width: 500px) {
+  .principal .mensajeContenedor .frasesMensaje {
+    text-align: center;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .principal .mensajeContenedor .frasesMensaje {
+    text-align: center;
+  }
+}
+
+.principal .mensajeContenedor .formulario {
   border: 2px solid;
   padding: 10px;
   background-color: rgba(182, 151, 142, 0.687);
@@ -305,15 +430,7 @@ body {
   color: blanchedalmond;
 }
 
-.btn--enviar:hover {
-  background-color: blanchedalmond;
-}
-
-.btn--borrar:hover {
-  background-color: blanchedalmond;
-}
-
-.btn--enviar {
+.principal .mensajeContenedor .formulario .btn--enviar {
   display: inline-block;
   padding: 10px;
   font-size: 1rem;
@@ -323,7 +440,7 @@ body {
   background: blue;
 }
 
-.btn--borrar {
+.principal .mensajeContenedor .formulario .btn--borrar {
   display: inline-block;
   padding: 10px;
   font-size: 1rem;
@@ -333,7 +450,56 @@ body {
   background: red;
 }
 
-/* HOUSING */
+.principal .mensajeContenedor .formulario .btn--enviar:hover {
+  background-color: blanchedalmond;
+}
+
+.principal .mensajeContenedor .formulario .btn--borrar:hover {
+  background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 500px) {
+  .principal .mensajeContenedor .formulario {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .principal .mensajeContenedor .formulario {
+    max-width: 470px;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .principal .mensajeContenedor .formulario .textarea {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .principal .mensajeContenedor .formulario .textarea {
+    max-width: 350px;
+  }
+}
+
+.principal .iframe {
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .principal .iframe {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .principal .iframe {
+    margin-bottom: 30px;
+  }
+}
+
 .mainHousing {
   font-family: 'Secular One', sans-serif;
   color: white;
@@ -358,11 +524,39 @@ body {
   gap: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  .mainHousing {
+    height: auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .mainHousing {
+    height: auto;
+  }
+}
+
 .mainHousing__encabezado {
   margin: 40px auto;
   line-height: 50px;
   margin-bottom: 10px;
   color: blanchedalmond;
+}
+
+@media screen and (max-width: 500px) {
+  .mainHousing__encabezado {
+    margin: 30px 20px;
+    font-size: smaller;
+    text-align: center;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .mainHousing__encabezado {
+    margin: 30px 20px;
+    font-size: smaller;
+    text-align: center;
+  }
 }
 
 .mainHousing__servicios {
@@ -379,7 +573,180 @@ body {
   font-size: x-large;
 }
 
-/* RIGS DE MINERÍA */
+@media screen and (max-width: 500px) {
+  .mainHousing__servicios {
+    margin-left: 20px;
+    width: 450px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .mainHousing__servicios {
+    margin: auto;
+    width: 470px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+}
+
+.mainAcademia {
+  font-family: 'Secular One', sans-serif;
+  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: larger;
+}
+
+.mainAcademia .titularAcademia {
+  text-align: center;
+  color: blanchedalmond;
+}
+
+.mainAcademia .gridAcademia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 500px) {
+  .mainAcademia .gridAcademia {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat 1, 1fr;
+        grid-template-columns: repeat 1, 1fr;
+    gap: 10px 30px;
+    width: 100%;
+    height: 100vh;
+    margin: 30px auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .mainAcademia .gridAcademia {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat 2, 1fr;
+        grid-template-columns: repeat 2, 1fr;
+    gap: 20px 20px;
+    width: 100%;
+    height: 100vh;
+    margin: 30px auto;
+  }
+}
+
+.mainAcademia .gridAcademia__criptomonedas, .mainAcademia .gridAcademia__blockchain, .mainAcademia .gridAcademia__defis, .mainAcademia .gridAcademia__minado, .mainAcademia .gridAcademia__roi, .mainAcademia .gridAcademia__hashrate {
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 9px 1px;
+          box-shadow: 0px 0px 9px 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.mainAcademia .gridAcademia__criptomonedas {
+  background-image: url("../img/criptomonedas-nulas-1140x570.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainAcademia .gridAcademia__criptomonedas:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mainAcademia .gridAcademia__minado {
+  background-image: url("../img/housing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainAcademia .gridAcademia__minado:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mainAcademia .gridAcademia__blockchain {
+  background-image: url("../img/blockchain-informacion-agil-seguridad.1.12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainAcademia .gridAcademia__blockchain:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mainAcademia .gridAcademia__defis {
+  background-image: url("../img/1613490263110_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainAcademia .gridAcademia__defis:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mainAcademia .gridAcademia__hashrate {
+  background-image: url("../img/chart-12-640x336.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainAcademia .gridAcademia__hashrate:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mainAcademia .gridAcademia__roi {
+  background-image: url("../img/shutterstock_1022256694-2000x1200.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainAcademia .gridAcademia__roi:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
 .mainRigs {
   color: white;
   background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
@@ -408,24 +775,7 @@ body {
           flex-direction: row;
 }
 
-.mainRigs__titulo {
-  margin-top: 35px;
-  font-size: x-large;
-  text-align: center;
-  margin-bottom: 35px;
-  color: blanchedalmond;
-}
-
-.mainRigs__parrafos {
-  letter-spacing: 1px;
-  line-height: 35px;
-}
-
-.mainRigs__foto {
-  text-align: center;
-}
-
-.mainRigs__rig1, .mainRigs__rig2 {
+.mainRigs__rigs .mainRigs__rig1, .mainRigs__rigs .mainRigs__rig2 {
   text-align: center;
   margin-top: 35px;
   border: 2px solid white;
@@ -453,11 +803,49 @@ body {
   gap: 26px;
 }
 
-.mainRigs__palabras {
+.mainRigs__rigs .mainRigs__rig1 .mainRigs__palabras, .mainRigs__rigs .mainRigs__rig2 .mainRigs__palabras {
   color: blanchedalmond;
 }
 
-.formasDePago {
+@media screen and (max-width: 500px) {
+  .mainRigs__rigs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .mainRigs__rigs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.mainRigs__titulo {
+  margin-top: 35px;
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 35px;
+  color: blanchedalmond;
+}
+
+@media screen and (max-width: 500px) {
+  .mainRigs__titulo {
+    font-size: medium;
+  }
+}
+
+.mainRigs .formasDePago {
   text-align: center;
   margin-top: 35px;
   border: 2px solid white;
@@ -485,139 +873,22 @@ body {
   margin-bottom: 40px;
 }
 
-.formasDePago2, .plazoDeEntrega {
+.mainRigs .formasDePago .formasDePago2, .mainRigs .formasDePago .plazoDeEntrega {
   font-size: x-large;
   color: blanchedalmond;
 }
 
-.plazoDeEntrega {
+.mainRigs .formasDePago .plazoDeEntrega {
   text-decoration: overline;
 }
 
-/* ACADEMIA */
-.mainAcademia {
-  font-family: 'Secular One', sans-serif;
-  background-image: url("../img/4c7d263a7f8b55e43ce57f03326b36be.jpg");
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 30px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+.mainRigs .container .row .mainRigs__parrafos {
+  letter-spacing: 1px;
+  line-height: 35px;
 }
 
-.titularAcademia {
+.mainRigs .container .row .mainRigs__foto {
   text-align: center;
-  color: blanchedalmond;
-}
-
-.gridAcademia {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  width: 100%;
-  max-width: 900px;
-  height: 100vh;
-  margin: 30px auto;
-}
-
-.gridAcademia__criptomonedas, .gridAcademia__blockchain, .gridAcademia__defis, .gridAcademia__minado, .gridAcademia__roi, .gridAcademia__hashrate {
-  border: 2px solid white;
-  text-align: center;
-  padding: 10px;
-  -webkit-box-shadow: 0px 0px 9px 1px;
-          box-shadow: 0px 0px 9px 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.gridAcademia__criptomonedas {
-  background-image: url("../img/criptomonedas-nulas-1140x570.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.gridAcademia__criptomonedas:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-}
-
-.gridAcademia__minado {
-  background-image: url("../img/housing.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.gridAcademia__minado:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-}
-
-.gridAcademia__blockchain {
-  background-image: url("../img/blockchain-informacion-agil-seguridad.1.12.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.gridAcademia__blockchain:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-}
-
-.gridAcademia__defis {
-  background-image: url("../img/1613490263110_1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.gridAcademia__defis:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-}
-
-.gridAcademia__hashrate {
-  background-image: url("../img/chart-12-640x336.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.gridAcademia__hashrate:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-}
-
-.gridAcademia__roi {
-  background-image: url("../img/shutterstock_1022256694-2000x1200.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.gridAcademia__roi:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
 }
 
 /* MEDIA QUERIE MOBILE */
@@ -661,105 +932,6 @@ body {
   }
   body {
     overflow-x: hidden;
-  }
-  /* index */
-  .mainIndex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 450px;
-  }
-  .main__imagenes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .main__titulo {
-    padding-left: 30px;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .logoBtc {
-    max-width: 300px;
-  }
-  .logoEth {
-    max-width: 135px;
-  }
-  .Armamos, .Billetera, .Garantias, .Housing {
-    width: 400px;
-    padding: 20px;
-    height: 180px;
-  }
-  .Armamos__titulo h2, .Billetera__titulo h2, .Garantias__titulo h2, .Housing__titulo h2 {
-    font-size: medium;
-  }
-  /* academia */
-  .gridAcademia {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    gap: 10px 30px;
-    width: 100%;
-    height: 100vh;
-    margin: 30px auto;
-  }
-  /* housing */
-  .mainHousing__servicios {
-    margin-left: 20px;
-    width: 450px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-  }
-  .mainHousing {
-    height: auto;
-  }
-  .mainHousing__encabezado {
-    margin: 30px 20px;
-    font-size: smaller;
-    text-align: center;
-  }
-  /* contactanos */
-  .principal {
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .mensaje, .frasesMensaje {
-    text-align: center;
-  }
-  .formulario {
-    max-width: 400px;
-    margin: 10px auto;
-  }
-  .textarea {
-    max-width: 350px;
-  }
-  .iframe {
-    margin-bottom: 30px;
-  }
-  /* rigs de mineria */
-  .mainRigs__titulo {
-    font-size: medium;
-  }
-  .mainRigs__rigs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -819,96 +991,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  /* Academia */
-  .gridAcademia {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: 20px 20px;
-    width: 100%;
-    height: 100vh;
-    margin: 30px auto;
-  }
-  /* index */
-  .Armamos, .Billetera, .Garantias, .Housing {
-    width: 500px;
-    margin: 10px auto;
-  }
-  .mainIndex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 700px;
-  }
-  .main__titulo {
-    margin-top: 50px;
-    padding-left: 60px;
-    text-align: center;
-  }
-  .main__imagenes {
-    margin: auto;
-  }
-  .logoBtc {
-    max-width: 350px;
-  }
-  .logoEth {
-    max-width: 150px;
-  }
-  /* contactanos */
-  .principal {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-  .mensaje, .frasesMensaje {
-    text-align: center;
-  }
-  .formulario {
-    max-width: 470px;
-    margin: 10px auto;
-  }
-  .textarea {
-    max-width: 350px;
-  }
-  .iframe {
-    margin-bottom: 30px;
-  }
-  /* housing */
-  .mainHousing__servicios {
-    margin: auto;
-    width: 470px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-  }
-  .mainHousing {
-    height: auto;
-  }
-  .mainHousing__encabezado {
-    margin: 30px 20px;
-    font-size: smaller;
-    text-align: center;
-  }
-  /* rigs de mineria */
-  .mainRigs__rigs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,96 @@
+.principal {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Secular One', sans-serif;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    color: white;
+    flex-grow: 1;
+    flex-shrink: 0;
+    @media screen and (max-width: 500px) {
+        height: auto;
+        display: flex;
+        flex-direction: column;  
+    }
+    @media (min-width: 501px) and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .mensajeContenedor {
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .mensaje {
+            color: blanchedalmond;
+            @media screen and (max-width: 500px) {
+                text-align: center; 
+            }
+            @media (min-width: 501px) and (max-width: 1000px) {
+                text-align: center;
+            }
+        }
+        .frasesMensaje {
+            font-size: large;
+            @media screen and (max-width: 500px) {
+                text-align: center; 
+            }
+            @media (min-width: 501px) and (max-width: 1000px) {
+                text-align: center;
+            }
+        }
+        .formulario {
+            border: 2px solid;
+            padding: 10px;
+            background-color: rgba(182, 151, 142, 0.687);
+            box-shadow: 0px 0px 15px 1px white;
+            margin-top: 20px;
+            color: blanchedalmond;
+            @mixin btn ($col, $bg) {
+                display: inline-block;
+                padding: 10px;
+                font-size: 1rem;
+                text-decoration: none;
+                border-radius: 10px;
+                color: $col;
+                background: $bg;
+            }
+            .btn--enviar {
+                @include btn (white, blue)
+            }
+            .btn--borrar {
+                @include btn (white, red)
+            }
+            .btn--enviar:hover {
+                background-color: blanchedalmond; 
+            }
+            .btn--borrar:hover {
+                background-color: blanchedalmond;
+            }
+            @media screen and (max-width: 500px) {
+                max-width: 400px;
+                margin: 10px auto; 
+            }
+            @media (min-width: 501px) and (max-width: 1000px) {
+                max-width: 470px;
+                margin: 10px auto;
+            }
+            .textarea {
+                @media screen and (max-width: 500px) {
+                    max-width: 350px;
+                }
+                @media (min-width: 501px) and (max-width: 1000px) {
+                    max-width: 350px;
+                }
+           }
+        }
+    }
+    .iframe {
+        margin: auto;
+        @media screen and (max-width: 500px) {
+            margin-bottom: 30px; 
+        }
+        @media (min-width: 501px) and (max-width: 1000px) {
+            margin-bottom: 30px;
+        }
+    }
+}

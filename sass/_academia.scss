@@ -1,0 +1,104 @@
+.mainAcademia {
+    font-family: 'Secular One', sans-serif;
+    background-image: url('../img/4c7d263a7f8b55e43ce57f03326b36be.jpg');
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: larger;
+    .titularAcademia {
+        text-align: center;
+        color: blanchedalmond;
+    }
+    .gridAcademia {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        width: 100%;
+        max-width: 900px;
+        height: 100vh;
+        margin: 30px auto;
+        @media screen and (max-width: 500px) {
+            display: grid;
+            grid-template-columns: repeat (1, 1fr);
+            gap: 10px 30px;
+            width: 100%;
+            height: 100vh;
+            margin: 30px auto;
+        }
+        @media (min-width: 501px) and (max-width: 1000px) {
+            display: grid;
+            grid-template-columns: repeat (2, 1fr);
+            gap: 20px 20px;
+            width: 100%;
+            height: 100vh;
+            margin: 30px auto;
+        }
+        &__criptomonedas, &__blockchain, &__defis, &__minado, &__roi, &__hashrate {
+            border: 2px solid white;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 0px 9px 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: grayscale(1);
+        }
+        &__criptomonedas {
+            background-image: url('../img/criptomonedas-nulas-1140x570.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            &:hover {
+                filter: none;
+            }
+        }
+        &__minado {
+            background-image: url('../img/housing.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            &:hover {
+                filter: none;
+            }
+        }
+        &__blockchain {
+            background-image: url('../img/blockchain-informacion-agil-seguridad.1.12.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            &:hover {
+                filter: none;
+            }
+        }
+        &__defis {
+            background-image: url('../img/1613490263110_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            &:hover {
+                filter: none;
+            }
+        }
+        &__hashrate {
+            background-image: url('../img/chart-12-640x336.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            &:hover {
+                filter: none;
+            }
+        }
+        &__roi {
+            background-image: url('../img/shutterstock_1022256694-2000x1200.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+}
